@@ -59,29 +59,14 @@ return Scaffold(
                     ),
                     // button 2
                     MyButton(
-                      iconImagePath: 'assets/WRCCV1.png', 
-                      buttonText: 'Water Parameters',
+                      iconImagePath: 'assets/WECCV1.png', 
+                      buttonText: 'WECC',
                       onPressed: () {
-                        GoRouter.of(context).go('Inputpageone');
+                        GoRouter.of(context).go('/wecc');
                       },
                     ),
-                    // button 3
-                    MyButton(
-                      iconImagePath: 'assets/WRCCV1.png', 
-                      buttonText: 'WQCC',
-                      onPressed: () {
-                        GoRouter.of(context).go('/wqcc');
-                      },
-                    ),
-
-                         MyButton(
-                      iconImagePath: 'assets/WRCCV1.png', 
-                      buttonText: 'WQCC',
-                      onPressed: () {
-                        GoRouter.of(context).go('/water-parameter');
-                      },
-                    ),
-
+                
+                
                
 
 
@@ -110,30 +95,42 @@ return Scaffold(
                
               // ),
 
-               
-                 MyButton(
-                      iconImagePath: 'assets/WECCV1.png', 
-                      buttonText: 'Wecc',
-                      onPressed: () {
-                        GoRouter.of(context).go('/wecc');
-                      },
-                    ),
+             
            
-                 MyButton(
+            
+              Padding(
+                padding:const  EdgeInsets.symmetric(horizontal: 25.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    // button 1
+                   MyButton(
                       iconImagePath: 'assets/WRCCV1.png', 
                       buttonText: 'WRCC',
                       onPressed: () {
                         GoRouter.of(context).go('/wrcc');
                       },
                     ),
-
-                     MyButton(
+                   // button 2
+                 MyButton(
                       iconImagePath: 'assets/WQCCV1.png', 
-                      buttonText: 'WRCC',
+                      buttonText: 'WQCC',
                       onPressed: () {
                         GoRouter.of(context).go('/wqcc');
                       },
                     ),
+            
+                  
+            
+               
+
+
+                  ],
+                ),
+              ),
+              const SizedBox(height: 15),
+            
+            
             ],
           ),
         ),
