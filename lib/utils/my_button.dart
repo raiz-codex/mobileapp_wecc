@@ -22,17 +22,17 @@ class MyButton extends StatelessWidget {
           Container(
             height: 100,
             padding: const EdgeInsets.all(2),
-            decoration: BoxDecoration(
-              color: const Color.fromARGB(255, 190, 198, 196),
-              borderRadius: BorderRadius.circular(10),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.shade500,
-                  blurRadius: 10,
-                  spreadRadius: 5,
-                ),
-              ],
-            ),
+            // decoration: BoxDecoration(
+            //   color: const Color.fromARGB(255, 190, 198, 196),
+            //   borderRadius: BorderRadius.circular(10),
+            //   boxShadow: [
+            //     BoxShadow(
+            //       color: Colors.grey.shade500,
+            //       blurRadius: 10,
+            //       spreadRadius: 5,
+            //     ),
+            //   ],
+            // ),
             child: Center(
               child: Image.asset(
                 iconImagePath,

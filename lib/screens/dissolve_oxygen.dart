@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mobileapp_wecc/utils/my_post.dart';
 
-class WQIPost extends StatelessWidget {
-  const WQIPost({Key? key});
+class DissolveOxygen extends StatelessWidget {
+  const DissolveOxygen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +9,7 @@ class WQIPost extends StatelessWidget {
       extendBody: true,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: const Text('Water Quality Index'),
+        title: const Text(''),
         backgroundColor: Colors.transparent, // Make the app bar transparent
         elevation: 0, // Remove the app bar shadow
       ),
@@ -45,12 +44,12 @@ class WQIPost extends StatelessWidget {
                             ),
                             borderRadius: BorderRadius.circular(10.0),
                             boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withOpacity(0.3),
-                                spreadRadius: 1,
-                                blurRadius: 5,
-                                offset: const Offset(0, 3),
-                              ),
+                              // BoxShadow(
+                              //   color: Colors.black.withOpacity(0.3),
+                              //   spreadRadius: 1,
+                              //   blurRadius: 5,
+                              //   offset: const Offset(0, 3),
+                              // ),
                             ],
                           ),
                         ),
@@ -61,7 +60,7 @@ class WQIPost extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Water Quality Index',
+                                'Dissolve Oxygen',
                                 style: TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold,
@@ -69,7 +68,7 @@ class WQIPost extends StatelessWidget {
                               ),
                               const SizedBox(height: 10),
                               Text(
-                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lectus vitae urna ullamcorper placerat. Sed fringilla libero vitae ligula fermentum, ut malesuada nulla eleifend. Aliquam erat volutpat. Nullam in purus et justo tincidunt tempor. Fusce porttitor, sapien vel finibus venenatis, nisi ipsum hendrerit urna, vitae tempus enim sapien ut libero.',
+                                'Measured in milligrams per liter (mg/L) or parts per million (ppm), dissolved oxygen in water is the maximum quantity of oxygen gas that can dissolve in a specified volume of water under particular conditions. A number of variables, including salinity, pressure, and temperature, affect this limit. Warmer water holds less dissolved oxygen than colder water. Aquatic life depends on maintaining appropriate dissolved oxygen levels since oxygen is necessary for respiration and for the general well-being of aquatic environments.',
                                 style: TextStyle(
                                   fontSize: 16,
                                 ),
@@ -81,9 +80,7 @@ class WQIPost extends StatelessWidget {
                     ),
                   ),
                   // MyPost widget
-                  MyPost(
-                    myposticonimagePath: 'assets/cl.png',
-                  ),
+            
                 ],
               ),
             ),

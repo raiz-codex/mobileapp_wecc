@@ -41,7 +41,7 @@ return Scaffold(
                       iconImagePath: 'assets/DOV1.png', 
                       buttonText: 'Dissolve Oxygen',
                       onPressed: () {
-                        GoRouter.of(context).go('/wqi-post');
+                        GoRouter.of(context).go('/dissolve-oxygen');
                       },
                     ),
                     // button 1
@@ -49,7 +49,7 @@ return Scaffold(
                       iconImagePath: 'assets/PHV1.png', 
                       buttonText: 'pH',
                       onPressed: () {
-                        GoRouter.of(context).go('/');
+                        GoRouter.of(context).go('/pH');
                       },
                     ),
                     //button 2
@@ -57,7 +57,7 @@ return Scaffold(
                       iconImagePath: 'assets/TEMPV1.png', 
                       buttonText: 'Temperature',
                       onPressed: () {
-                        GoRouter.of(context).go('/');
+                        GoRouter.of(context).go('/temperature');
                       },
                     ),
                   ],
@@ -73,17 +73,17 @@ return Scaffold(
                     //send button
                     MyButton(
                       iconImagePath: 'assets/TotalNitrogenV1.png', 
-                      buttonText: 'total posphorus',
+                      buttonText: 'total nitrogen',
                       onPressed: () {
-                        GoRouter.of(context).go('/profile');
+                        GoRouter.of(context).go('/total-nitrogen');
                       },
                     ),
                     // button 1
                     MyButton(
                       iconImagePath: 'assets/TotalPhosporusV1.png', 
-                      buttonText: 'total nitrogen',
+                      buttonText: 'total posphorus',
                       onPressed: () {
-                        GoRouter.of(context).go('Inputpageone');
+                        GoRouter.of(context).go('/total-phosporus');
                       },
                     ),
                     //button 2
@@ -91,7 +91,7 @@ return Scaffold(
                       iconImagePath: 'assets/BODV1.png', 
                       buttonText: 'BOD',
                       onPressed: () {
-                        GoRouter.of(context).go('Inputpageone');
+                        GoRouter.of(context).go('/bod');
                       },
                     ),
                   ],
@@ -107,25 +107,25 @@ return Scaffold(
                     //send button
                     MyButton(
                       iconImagePath: 'assets/TSSV1.png', 
-                      buttonText: 'WECC',
+                      buttonText: 'TSS',
                       onPressed: () {
-                        GoRouter.of(context).go('/profile');
+                        GoRouter.of(context).go('/tss');
                       },
                     ),
                     // button 1
                     MyButton(
                       iconImagePath: 'assets/NO3V1.png', 
-                      buttonText: 'WRCC',
+                      buttonText: 'Nitrate',
                       onPressed: () {
-                        GoRouter.of(context).go('/wqi-post');
+                        GoRouter.of(context).go('/nitrate');
                       },
                     ),
                     //button 2
                     MyButton(
                       iconImagePath: 'assets/PO4V1.png', 
-                      buttonText: 'WQCC',
+                      buttonText: 'Phosphate',
                       onPressed: () {
-                        GoRouter.of(context).go('/wqi-post');
+                        GoRouter.of(context).go('/phosphate');
                       },
                     ),
                   ],

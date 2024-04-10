@@ -40,7 +40,7 @@ class WQIPost extends StatelessWidget {
                           height: 100,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/DOV1.png'), // Replace with your Pokémon image path
+                              image: AssetImage('assets/pokemon.png'), // Replace with your Pokémon image path
                               fit: BoxFit.cover,
                             ),
                             borderRadius: BorderRadius.circular(10.0),

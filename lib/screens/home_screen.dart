@@ -35,11 +35,12 @@ return Scaffold(
             children: [
               //  SizedBox(height: 25),
               //card
-             const   MyCard(
-                cardiconImagePath: 'assets/fp.jpg', 
-                cardTitle: 'WECC mobile',
-                cardSubtitle: 'Wecc app',
-              ),
+            //  const   MyCard(
+            //     cardiconImagePath: 'assets/fp.jpg', 
+            //     cardTitle: 'WECC mobile',
+            //     cardSubtitle: 'Wecc app',
+            //   ),
+
              const   SizedBox(height: 25),
               // button 
               Padding(
@@ -50,7 +51,7 @@ return Scaffold(
                     // button 1
                     MyButton(
                       iconImagePath: 'assets/WRCCV1.png', 
-                      buttonText: 'WECC',
+                      buttonText: 'Water Parameters',
                       onPressed: () {
                         // GoRouter.of(context).go('/wqi');
                         context.go('/wqi');
@@ -59,7 +60,7 @@ return Scaffold(
                     // button 2
                     MyButton(
                       iconImagePath: 'assets/WRCCV1.png', 
-                      buttonText: 'WRCC',
+                      buttonText: 'Water Parameters',
                       onPressed: () {
                         GoRouter.of(context).go('Inputpageone');
                       },
@@ -69,35 +70,70 @@ return Scaffold(
                       iconImagePath: 'assets/WRCCV1.png', 
                       buttonText: 'WQCC',
                       onPressed: () {
-                        GoRouter.of(context).go('/wqi-post');
+                        GoRouter.of(context).go('/wqcc');
                       },
                     ),
+
+                         MyButton(
+                      iconImagePath: 'assets/WRCCV1.png', 
+                      buttonText: 'WQCC',
+                      onPressed: () {
+                        GoRouter.of(context).go('/water-parameter');
+                      },
+                    ),
+
+               
+
+
                   ],
                 ),
               ),
               const SizedBox(height: 15),
               // tiles
-              const  Padding(
-                padding: EdgeInsets.all(25.0),
-                child:Column(
-                    children: [
-                    MyTile(
-                      iconImagePath: 'assets/cl.png',
-                      tileTitle: 'stats',
-                      tileSubtitle: ' history',
-                    ),
-                    SizedBox(height: 15,),
-                    MyTile(
-                      iconImagePath: 'assets/cl.png',
-                      tileTitle: 'stats',
-                      tileSubtitle: ' history',
-                    ),
-                    ],
-                ),
+              // const  Padding(
+              //   padding: EdgeInsets.all(25.0),
+              //   child:Column(
+              //       children: [
+              //       MyTile(
+              //         iconImagePath: 'assets/cl.png',
+              //         tileTitle: 'stats',
+              //         tileSubtitle: ' history',
+              //       ),
+              //       SizedBox(height: 15,),
+              //       MyTile(
+              //         iconImagePath: 'assets/cl.png',
+              //         tileTitle: 'stats',
+              //         tileSubtitle: ' history',
+              //       ),
+              //       ],
+              //   ),
                
-              ),
+              // ),
+
+               
+                 MyButton(
+                      iconImagePath: 'assets/WECCV1.png', 
+                      buttonText: 'Wecc',
+                      onPressed: () {
+                        GoRouter.of(context).go('/wecc');
+                      },
+                    ),
            
-           
+                 MyButton(
+                      iconImagePath: 'assets/WRCCV1.png', 
+                      buttonText: 'WRCC',
+                      onPressed: () {
+                        GoRouter.of(context).go('/wrcc');
+                      },
+                    ),
+
+                     MyButton(
+                      iconImagePath: 'assets/WQCCV1.png', 
+                      buttonText: 'WRCC',
+                      onPressed: () {
+                        GoRouter.of(context).go('/wqcc');
+                      },
+                    ),
             ],
           ),
         ),

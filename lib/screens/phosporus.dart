@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mobileapp_wecc/utils/my_post.dart';
 
-class WQIPost extends StatelessWidget {
-  const WQIPost({Key? key});
+class TotalPhosporus extends StatelessWidget {
+  const TotalPhosporus({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +9,7 @@ class WQIPost extends StatelessWidget {
       extendBody: true,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: const Text('Water Quality Index'),
+        title: const Text(''),
         backgroundColor: Colors.transparent, // Make the app bar transparent
         elevation: 0, // Remove the app bar shadow
       ),
@@ -40,17 +39,17 @@ class WQIPost extends StatelessWidget {
                           height: 100,
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/DOV1.png'), // Replace with your Pokémon image path
+                              image: AssetImage('assets/TotalPhosporusV1.png'), // Replace with your Pokémon image path
                               fit: BoxFit.cover,
                             ),
                             borderRadius: BorderRadius.circular(10.0),
                             boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withOpacity(0.3),
-                                spreadRadius: 1,
-                                blurRadius: 5,
-                                offset: const Offset(0, 3),
-                              ),
+                              // BoxShadow(
+                              //   color: Colors.black.withOpacity(0.3),
+                              //   spreadRadius: 1,
+                              //   blurRadius: 5,
+                              //   offset: const Offset(0, 3),
+                              // ),
                             ],
                           ),
                         ),
@@ -61,7 +60,7 @@ class WQIPost extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Water Quality Index',
+                                'Total Phosporus',
                                 style: TextStyle(
                                   fontSize: 24,
                                   fontWeight: FontWeight.bold,
@@ -69,7 +68,7 @@ class WQIPost extends StatelessWidget {
                               ),
                               const SizedBox(height: 10),
                               Text(
-                                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lectus vitae urna ullamcorper placerat. Sed fringilla libero vitae ligula fermentum, ut malesuada nulla eleifend. Aliquam erat volutpat. Nullam in purus et justo tincidunt tempor. Fusce porttitor, sapien vel finibus venenatis, nisi ipsum hendrerit urna, vitae tempus enim sapien ut libero.',
+                                'The total concentration of all phosphorus present in a water sample, including dissolved, particulate, and organic phosphorus, is referred to as total phosphorus in water parameters. Parts per million (ppm) or milligrams per liter (mg/L) are the common units of measurement. Total phosphorus regulatory limits are frequently established to prevent eutrophication, a condition in which an excess of phosphorus causes algal blooms and oxygen depletion, which affects aquatic ecosystems and water quality requirements.',
                                 style: TextStyle(
                                   fontSize: 16,
                                 ),
@@ -81,9 +80,7 @@ class WQIPost extends StatelessWidget {
                     ),
                   ),
                   // MyPost widget
-                  MyPost(
-                    myposticonimagePath: 'assets/cl.png',
-                  ),
+            
                 ],
               ),
             ),
